@@ -1,5 +1,20 @@
 == README
 
+sudo apt-get install libpq-dev postgresql postgresql-client
+
+phgrey@pavilion:~/work/readdle/smartback$ sudo -u postgres psql
+psql (9.3.9)
+Type "help" for help.
+
+postgres=# CREATE DATABASE streamer;
+CREATE DATABASE
+postgres=# CREATE USER phgrey  WITH password 'streampass12';
+CREATE ROLE
+postgres=#  GRANT ALL privileges ON DATABASE streamer TO phgrey;
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
